@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 223 85% 43%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+  
+  /* Custom colors for FoodFlow */
+  --walmart-blue: 210 100% 43%;
+  --supplier: 199 100% 42%;
+  --store-manager: 270 54% 37%;
+  --success: 162 75% 40%;
+  --warning: 38 92% 50%;
+  --error: 0 84% 60%;
+  
+  /* Chart colors */
+  --chart-1: 210 100% 43%;
+  --chart-2: 270 54% 37%;
+  --chart-3: 162 75% 40%;
+  --chart-4: 38 92% 50%;
+  --chart-5: 0 84% 60%;
+  
+  /* Sidebar colors for supplier */
+  --sidebar-background: 199 100% 42%;
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-primary: 199 100% 42%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 199 100% 35%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 199 100% 35%;
+  --sidebar-ring: 199 100% 30%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 210 100% 43%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+/* Apply store manager theme */
+.store-manager-theme {
+  --sidebar-background: 270 54% 37%;
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-primary: 270 54% 37%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 270 54% 25%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 270 54% 25%;
+  --sidebar-ring: 270 54% 20%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
